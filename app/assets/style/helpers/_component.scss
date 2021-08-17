@@ -1,0 +1,29 @@
+// 購物車標籤
+nav {
+  .badge {
+    top: 25%;
+    left: 70%;
+  }
+}
+
+.offcanvas {
+  width: 540px;
+  margin-top: 58px;
+  @include media-breakpoint-down(md) {
+    width: 100%;
+  }
+}
+
+// 次menu
+section .menu {
+  .nav-link {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #707070;
+    border-bottom: 1px solid transparent;
+    &:hover,
+    .active {
+      border-bottom: 1px solid $secondary;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.checkout4 {
+  margin-top: 102px;
+  .buttons {
+    margin-top: 96px;
+    margin-bottom: 132px;
+  }
+  .material-icons {
+    @include media-breakpoint-down(lg) {
+      font-size: 3rem;
+    }
+  }
+}

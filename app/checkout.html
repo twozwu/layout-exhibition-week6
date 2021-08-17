@@ -1,0 +1,245 @@
+---
+title: checkout
+layout: ./app/layout2.ejs
+engine: ejs
+current: checkout
+---
+
+<div class="checkout container">
+  <div class="row mt-5">
+    <div class="col-md-8 position-relative">
+      <!-- 購物進度條 -->
+      <div class="progress bg-secondary" style="height: 1px;"></div>
+      <ul class="nav flex-nowrap justify-content-around">
+        <li class="mt-1 position-relative circle checked">
+          確認訂單
+        </li>
+        <li class="mt-1 position-relative circle">
+          填寫訂購資訊
+        </li>
+        <li class="mt-1 position-relative circle">
+          填寫付款資訊
+        </li>
+        <li class="mt-1 position-relative circle">
+          完成訂購
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content row mt-5">
+    <ul class="col-lg-8">
+      <li class="card border-0 mb-3 p-0 position-relative">
+        <div class="row flex-nowrap g-0">
+          <div class="col-md-3 col-6">
+            <img
+              src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              class="img-fluid ratio"
+              alt="..."
+              style="max-height: 84px;"
+            />
+          </div>
+          <div class="col-md-9 col-6">
+            <div class="card-body py-0 ps-3 pe-0 h-100">
+              <div class="hstack justify-content-between h-100">
+                <div class="wrap w-100 w-md-auto">
+                  <div class="hstack justify-content-between">
+                    <h5 class="card-title fw-bold mb-0 fs-6">
+                      2020 台味設計展
+                    </h5>
+                    <a href="#" class="d-md-none d-flex">
+                      <span class="material-icons">
+                        close
+                      </span>
+                    </a>
+                  </div>
+                  <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                  <div class="hstack justify-content-between">
+                    <p class="card-text text-muted mb-0">
+                      全票<span class="fw-bold d-md-none">1</span>
+                    </p>
+                    <p class="card-text d-md-none fw-bold fs-5">NT$350</p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center d-md-flex d-none"
+                >
+                  <p class="card-text fw-bold fs-5">NT$350</p>
+                </div>
+                <div class="d-md-flex d-none">
+                  <div class="vstack justify-content-center align-items-center">
+                    <div class="hstack flex-column flex-md-row mx-auto">
+                      <a href="#" class="nav-link pe-lg-25 pe-md-2 px-0">
+                        <span class="material-icons">
+                          remove
+                        </span>
+                      </a>
+                      <h2 class="fw-bold fs-5">01</h2>
+                      <a href="#" class="nav-link ps-lg-25 ps-md-2 px-0">
+                        <span class="material-icons">
+                          add
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="text-center align-middle d-md-inline d-none">
+                  <span class="material-icons">
+                    close
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="card border-0 mb-3 p-0 position-relative">
+        <div class="row flex-nowrap g-0">
+          <div class="col-md-3 col-6">
+            <img
+              src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80"
+              class="img-fluid ratio"
+              alt="..."
+              style="max-height: 84px;"
+            />
+          </div>
+          <div class="col-md-9 col-6">
+            <div class="card-body py-0 ps-3 pe-0 h-100">
+              <div class="hstack justify-content-between h-100">
+                <div class="wrap w-100 w-md-auto">
+                  <div class="hstack justify-content-between">
+                    <h5 class="card-title fw-bold mb-0 fs-6">
+                      No.22 線上設計展
+                    </h5>
+                    <a href="#" class="d-md-none d-flex">
+                      <span class="material-icons">
+                        close
+                      </span>
+                    </a>
+                  </div>
+                  <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                  <div class="hstack justify-content-between">
+                    <p class="card-text text-muted mb-0">
+                      全票<span class="fw-bold d-md-none">1</span>
+                    </p>
+                    <p class="card-text d-md-none fw-bold fs-5">NT$350</p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center d-md-flex d-none"
+                >
+                  <p class="card-text fw-bold fs-5">NT$350</p>
+                </div>
+                <div class="d-md-flex d-none">
+                  <div class="vstack justify-content-center align-items-center">
+                    <div class="hstack flex-column flex-md-row mx-auto">
+                      <a href="#" class="nav-link pe-lg-25 pe-md-2 px-0">
+                        <span class="material-icons">
+                          remove
+                        </span>
+                      </a>
+                      <h2 class="fw-bold fs-5">01</h2>
+                      <a href="#" class="nav-link ps-lg-25 ps-md-2 px-0">
+                        <span class="material-icons">
+                          add
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="text-center align-middle d-md-inline d-none">
+                  <span class="material-icons">
+                    close
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="card border-0 mb-3 p-0 position-relative">
+        <div class="row flex-nowrap g-0">
+          <div class="col-md-3 col-6">
+            <img
+              src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+              class="img-fluid ratio"
+              alt="..."
+              style="max-height: 84px;"
+            />
+          </div>
+          <div class="col-md-9 col-6">
+            <div class="card-body py-0 ps-3 pe-0 h-100">
+              <div class="hstack justify-content-between h-100">
+                <div class="wrap w-100 w-md-auto">
+                  <div class="hstack justify-content-between">
+                    <h5 class="card-title fw-bold mb-0 fs-6">
+                      高雄設計節
+                    </h5>
+                    <a href="#" class="d-md-none d-flex">
+                      <span class="material-icons">
+                        close
+                      </span>
+                    </a>
+                  </div>
+                  <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                  <div class="hstack justify-content-between">
+                    <p class="card-text text-muted mb-0">
+                      全票<span class="fw-bold d-md-none">1</span>
+                    </p>
+                    <p class="card-text d-md-none fw-bold fs-5">NT$350</p>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center d-md-flex d-none"
+                >
+                  <p class="card-text fw-bold fs-5">NT$350</p>
+                </div>
+                <div class="d-md-flex d-none">
+                  <div class="vstack justify-content-center align-items-center">
+                    <div class="hstack flex-column flex-md-row mx-auto">
+                      <a href="#" class="nav-link pe-lg-25 pe-md-2 px-0">
+                        <span class="material-icons">
+                          remove
+                        </span>
+                      </a>
+                      <h2 class="fw-bold fs-5">01</h2>
+                      <a href="#" class="nav-link ps-lg-25 ps-md-2 px-0">
+                        <span class="material-icons">
+                          add
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="text-center align-middle d-md-inline d-none">
+                  <span class="material-icons">
+                    close
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="col-lg-4 offset-lg-0 offset-md-6 col-md-6 mb-6">
+      <div class="position-relative vh-lg-75 vh-25">
+        <div class="position-absolute bottom-0 end-0 w-md-100 w-50">
+          <div class="hstack fs-5">
+            <p class="mb-25">小計</p>
+            <p class="ms-auto mb-25">NT$11050</p>
+          </div>
+          <div class="d-flex">
+            <button
+              type="button"
+              class="btn btn-secondary flex-fill"
+              onclick="location.href='checkout2.html'"
+            >
+              下一步
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
