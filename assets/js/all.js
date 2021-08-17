@@ -1,22 +1,23 @@
-  //  <!-- Initialize Swiper -->
-const swiper = new Swiper(".mySwiper", {
+"use strict";
+
+//  <!-- Initialize Swiper -->
+var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   spaceBetween: 25,
   centeredSlides: true,
   grabCursor: true,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: false
   },
   loop: true,
   // loopFillGroupWithBlank: true,
   pagination: {
     el: ".swiper-pagination",
-    clickable: true,
-  },
+    clickable: true
+  }
 });
-
-$(function() {
+$(function () {
   console.log('Hello Bootstrap5');
 });
-
+//# sourceMappingURL=all.js.map

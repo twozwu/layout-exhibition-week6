@@ -1,10 +1,272 @@
----
-title: checkout
-layout: ./app/layout2.ejs
-engine: ejs
-current: checkout
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>checkout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
 
+  <body>
+    <nav class="navbar navbar-expand-lg border">
+  <div class="container position-relative">
+    <a class="navbar-brand mx-auto" href="index.html">EXHIBITION</a>
+    <button
+      class="navbar-toggler position-absolute"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="material-icons">
+        list
+      </span>
+    </button>
+    <div class="hstack position-absolute end-0">
+      <div class="collapse navbar-collapse d-none" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="product.html"
+              >Sign in</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="detail.html">Sign up</a>
+          </li>
+        </ul>
+      </div>
+      <a
+        href="#"
+        class="position-relative me-3 me-md-0"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+      >
+        <span class="material-icons nav-link navbar-expand text-dark">
+          confirmation_number
+        </span>
+        <span
+          class="position-absolute translate-middle badge rounded-pill bg-danger"
+        >
+          3
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- menuModal -->
+  <div class="container d-lg-none">
+    <div class="collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- offcanvasModal -->
+<div
+  class="offcanvas offcanvas-end bg-dark pe-2"
+  tabindex="-1"
+  id="offcanvasRight"
+  aria-labelledby="offcanvasRightLabel"
+>
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel" class="text-white fw-bold mb-0 mt-2">
+      Cart List
+    </h5>
+    <button
+      type="button"
+      class="btn-close btn-close-white text-reset"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <ul class="offcanvas-body pe-2">
+    <li class="card mb-3 ps-4 pe-2 py-4 position-relative">
+      <a href="#">
+        <span class="material-icons position-absolute top-0 start-0">
+          close
+        </span>
+      </a>
+      <div class="row flex-nowrap g-0">
+        <div class="col-4">
+          <img
+            src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            class="img-fluid ratio"
+            alt="..."
+            style="min-height: 120px;"
+            width="120px"
+          />
+        </div>
+        <div class="col-8">
+          <div class="card-body py-0 ps-3 pe-0">
+            <div class="row g-0">
+              <div class="col-md-6 col-9">
+                <h5 class="card-title fw-bold fs-6">2020 台味設計展</h5>
+                <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                <p class="card-text">全票</p>
+                <p class="card-text fw-bold fs-5">NT$350</p>
+              </div>
+              <div class="col-md-6 col-3">
+                <div
+                  class="vstack justify-content-center align-items-center h-100"
+                >
+                  <div class="hstack flex-column flex-md-row mx-auto">
+                    <a href="#" class="nav-link pe-lg-25 pe-md-2 px-0">
+                      <span class="material-icons">
+                        remove
+                      </span>
+                    </a>
+                    <h2 class="fw-bold fs-5">01</h2>
+                    <a href="#" class="nav-link ps-lg-25 ps-md-2 px-0">
+                      <span class="material-icons">
+                        add
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      class="card mb-3 ps-4 pe-2 py-4 position-relative"
+      style="max-width: 540px;"
+    >
+      <a href="#">
+        <span class="material-icons position-absolute top-0 start-0">
+          close
+        </span>
+      </a>
+      <div class="row flex-nowrap g-0">
+        <div class="col-4">
+          <img
+            src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80"
+            class="img-fluid ratio"
+            alt="..."
+            style="min-height: 120px;"
+            width="120px"
+          />
+        </div>
+        <div class="col-8">
+          <div class="card-body py-0 ps-3 pe-0">
+            <div class="row g-0">
+              <div class="col-md-6 col-9">
+                <h5 class="card-title fw-bold fs-6">2020 台味設計展</h5>
+                <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                <p class="card-text">全票</p>
+                <p class="card-text fw-bold fs-5">NT$350</p>
+              </div>
+              <div class="col-md-6 col-3">
+                <div
+                  class="vstack justify-content-center align-items-center h-100"
+                >
+                  <div class="hstack flex-column flex-md-row mx-auto">
+                    <a href="#" class="nav-link pe-lg-25 pe-md-2 px-0">
+                      <span class="material-icons">
+                        remove
+                      </span>
+                    </a>
+                    <h2 class="fw-bold fs-5">01</h2>
+                    <a href="#" class="nav-link ps-lg-25 ps-md-2 px-0">
+                      <span class="material-icons">
+                        add
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li
+      class="card mb-3 ps-4 pe-2 py-4 position-relative"
+      style="max-width: 540px;"
+    >
+      <a href="#">
+        <span class="material-icons position-absolute top-0 start-0">
+          close
+        </span>
+      </a>
+      <div class="row flex-nowrap g-0">
+        <div class="col-4">
+          <img
+            src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+            class="img-fluid ratio"
+            alt="..."
+            style="min-height: 120px;"
+            width="120px"
+          />
+        </div>
+        <div class="col-8">
+          <div class="card-body py-0 ps-3 pe-0">
+            <div class="row g-0">
+              <div class="col-md-6 col-9">
+                <h5 class="card-title fw-bold fs-6">2020 台味設計展</h5>
+                <p class="card-text mb-1">01 JUN — 31 OCT</p>
+                <p class="card-text">全票</p>
+                <p class="card-text fw-bold fs-5">NT$350</p>
+              </div>
+              <div class="col-md-6 col-3">
+                <div
+                  class="vstack justify-content-center align-items-center h-100"
+                >
+                  <div class="hstack flex-column flex-md-row mx-auto">
+                    <a href="#" class="nav-link pe-lg-25 pe-md-2 px-0">
+                      <span class="material-icons">
+                        remove
+                      </span>
+                    </a>
+                    <h2 class="fw-bold fs-5">01</h2>
+                    <a href="#" class="nav-link ps-lg-25 ps-md-2 px-0">
+                      <span class="material-icons">
+                        add
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div class="hstack offcanvas-footer bg-dark text-white p-3">
+    <span class="fs-5 me-4">小計</span><span class="fs-5">11050</span
+    ><button
+      class="btn btn-light text-primary ms-auto"
+      onclick="location.href='checkout.html'"
+    >
+      前往結帳
+    </button>
+  </div>
+</div>
+ 
 <div class="checkout container">
   <div class="row mt-5">
     <div class="col-md-8 position-relative">
@@ -243,3 +505,9 @@ current: checkout
     </div>
   </div>
 </div>
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
