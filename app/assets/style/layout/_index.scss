@@ -12,6 +12,7 @@
       }
     }
   }
+  // 熱門特展
   &__content {
     .special-pic {
       max-width: 350px;
@@ -21,6 +22,8 @@
         max-width: 100%;
       }
     }
+
+    // 直播回顧
     .live-detail {
       background: #190014cc;
       min-height: 482px;
