@@ -5,12 +5,12 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 //layout
-@import "./helpers/_base";
-@import "./helpers/_component";
-@import "./layout/_index";
+@import "./helpers/base";
+@import "./helpers/component";
+@import "./layout/index";
 
 // pages
-@import "./pages/_product";
-@import "./pages/_detail";
-@import "./pages/_checkout";
-@import "./pages/_checkout4";
+@import "./pages/product";
+@import "./pages/detail";
+@import "./pages/checkout";
+@import "./pages/checkout-finish";
